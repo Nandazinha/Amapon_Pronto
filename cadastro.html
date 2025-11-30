@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style_cadastro.css" />
+    <title>Cadastro - Amapon</title>
+
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <img src="imgs/logo amapon.jpeg" alt="AMAPON logo">
+                <div>
+                    <strong style="font-size:18px">amapon</strong><br>
+                    <small style="font-style:italic; color:#444">Humanizando e Transformando Vidas.</small>
+                </div>
+            </div>
+            <nav aria-label="menu principal">
+                 <a href="index.html">Início</a>
+                <a href="cadastro.html">Vagas</a>
+                <a href="apoie.html">Apoie</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+    <h1>Cadastro - Amapon</h1>
+
+    <div class="tabs" role="tablist">
+        <div class="tab active" data-target="endereco">Endereço</div>
+        <div class="tab" data-target="acompanhante">Acompanhante</div>
+        <div class="tab" data-target="paciente">Paciente</div>
+    </div>
+
+    <div id="endereco" class="panel">
+        <form id="form-endereco">
+            <div class="field">
+                <label for="cep">CEP</label>
+                <input id="cep" name="cep" type="text" inputmode="numeric" maxlength="8" pattern="\d{8}" placeholder="somente números (8 dígitos)" required>
+            </div>
+            <div class="row">
+                <div class="field small">
+                    <label for="uf">UF</label>
+                    <input id="uf" name="uf" type="text" maxlength="2" placeholder="SP" required>
+                </div>
+                <div class="field">
+                    <label for="cidade">Cidade</label>
+                    <input id="cidade" name="cidade" type="text" maxlength="150" required>
+                </div>
+            </div>
+            <div class="field">
+                <label for="rua">Rua</label>
+                <input id="rua" name="rua" type="text" maxlength="200" required>
+            </div>
+            <div class="field">
+                <label for="complemento">Complemento</label>
+                <input id="complemento" name="complemento" type="text" maxlength="150">
+            </div>
+            <div style="display:flex; gap:8px; margin-top:8px;">
+                <button type="submit">Salvar Endereço</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+
+        <div class="list">
+            <strong>Endereços cadastrados (local):</strong>
+            <div id="lista-enderecos">Nenhum endereço cadastrado.</div>
+        </div>
+    </div>
+
+    <div id="acompanhante" class="panel" style="display:none;">
+        <form id="form-acompanhante">
+            <div class="field">
+                <label for="acomp-nome">Nome</label>
+                <input id="acomp-nome" name="nome" type="text" maxlength="200" required>
+            </div>
+            <div class="row">
+                <div class="field small">
+                    <label for="acomp-idade">Idade</label>
+                    <input id="acomp-idade" name="idade" type="number" min="0" max="150" required>
+                </div>
+                <div class="field">
+                    <label for="cpf-acompanhante">CPF (apenas números)</label>
+                    <input id="cpf-acompanhante" name="cpf_acompanhante" type="text" inputmode="numeric" maxlength="11" pattern="\d{11}" required>
+                </div>
+            </div>
+            <div class="field">
+                <label for="tel-acompanhante">Telefone</label>
+                <input id="tel-acompanhante" name="telefone_acompanhante" type="tel" maxlength="20" placeholder="(xx) xxxxx-xxxx">
+            </div>
+            <div style="display:flex; gap:8px; margin-top:8px;">
+                <button type="submit">Salvar Acompanhante</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+
+        <div class="list">
+            <strong>Acompanhantes cadastrados (local):</strong>
+            <div id="lista-acompanhantes">Nenhum acompanhante cadastrado.</div>
+        </div>
+    </div>
+
+    <div id="paciente" class="panel" style="display:none;">
+        <form id="form-paciente">
+            <div class="field">
+                <label for="paciente-nome">Nome</label>
+                <input id="paciente-nome" name="nome" type="text" maxlength="200" required>
+            </div>
+            <div class="row">
+                <div class="field small">
+                    <label for="paciente-idade">Idade</label>
+                    <input id="paciente-idade" name="idade" type="number" min="0" max="150" required>
+                </div>
+                <div class="field">
+                    <label for="paciente-cpf">CPF (11 dígitos)</label>
+                    <input id="paciente-cpf" name="cpf" type="text" inputmode="numeric" maxlength="11" pattern="\d{11}" required>
+                </div>
+            </div>
+            <div class="field">
+                <label for="paciente-telefone">Telefone</label>
+                <input id="paciente-telefone" name="telefone" type="tel" maxlength="20">
+            </div>
+            <div class="field">
+                <label for="paciente-email">Email</label>
+                <input id="paciente-email" name="email" type="email" maxlength="200" required>
+            </div>
+            <div class="field">
+                <label for="paciente-senha">Senha</label>
+                <input id="paciente-senha" name="senha" type="password" maxlength="25" required>
+            </div>
+
+            <div class="field">
+                <label for="select-endereco">Endereço (id_endereco)</label>
+                <select id="select-endereco" name="id_endereco">
+                    <option value="">-- selecione ou cadastre um endereço --</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="select-acompanhante">Acompanhante (id_acompanhante)</label>
+                <select id="select-acompanhante" name="id_acompanhante">
+                    <option value="">-- selecione ou cadastre um acompanhante --</option>
+                </select>
+            </div>
+
+            <div style="display:flex; gap:8px; margin-top:8px;">
+                <button type="submit">Cadastrar Paciente</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+
+        <div class="list">
+            <strong>Pacientes cadastrados (local):</strong>
+            <div id="lista-pacientes">Nenhum paciente cadastrado.</div>
+        </div>
+    </div>
+
+    <h3>Saída JSON (simulação local)</h3>
+    <pre id="output">Nenhuma ação realizada.</pre>
+
+    <script>
+        // GitHub Copilot
+        (function(){
+            // UI tabs
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(t => t.addEventListener('click', () => {
+                document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+                document.querySelectorAll('.panel').forEach(p=>p.style.display='none');
+                t.classList.add('active');
+                document.getElementById(t.dataset.target).style.display='block';
+            }));
+
+            // Local storage of records (simulação)
+            const enderecos = [];
+            const acompanhantes = [];
+            const pacientes = [];
+
+            let nextEnderecoId = 1; // id_endereco precisa ser único (no schema não é AUTO_INCREMENT)
+            let nextAcompanhanteId = 1; // id_acompanhante auto_increment (simulado)
+            let nextPacienteId = 1; // id_paciente auto_increment (simulado)
+
+            const el = id => document.getElementById(id);
+            const output = el('output');
+            const listaEnd = el('lista-enderecos');
+            const listaAcomp = el('lista-acompanhantes');
+            const listaPac = el('lista-pacientes');
+            const selEndereco = el('select-endereco');
+            const selAcomp = el('select-acompanhante');
+
+            function renderList(container, items, format) {
+                if (!items.length) { container.textContent = 'Nenhum registro cadastrado.'; return; }
+                container.innerHTML = items.map(i => `<div>${format(i)}</div>`).join('');
+            }
+
+            function refreshSelects() {
+                selEndereco.innerHTML = '<option value="">-- selecione ou cadastre um endereço --</option>'
+                    + enderecos.map(e=>`<option value="${e.id_endereco}">${e.id_endereco} — ${e.rua}, ${e.cidade}/${e.uf} (CEP ${e.cep})</option>`).join('');
+                selAcomp.innerHTML = '<option value="">-- selecione ou cadastre um acompanhante --</option>'
+                    + acompanhantes.map(a=>`<option value="${a.id_acompanhante}">${a.id_acompanhante} — ${a.nome} (CPF ${a.cpf_acompanhante})</option>`).join('');
+            }
+
+            // Endereço form
+            el('form-endereco').addEventListener('submit', function(e){
+                e.preventDefault();
+                const cep = el('cep').value.trim();
+                const uf = el('uf').value.trim().toUpperCase();
+                const cidade = el('cidade').value.trim();
+                const rua = el('rua').value.trim();
+                const complemento = el('complemento').value.trim();
+
+                // simple validation
+                if (!/^\d{8}$/.test(cep)) { alert('CEP deve ter 8 números'); return; }
+                if (!/^[A-Z]{2}$/.test(uf)) { alert('UF inválida (2 letras)'); return; }
+
+                const novo = {
+                    id_endereco: nextEnderecoId++,
+                    cep: parseInt(cep,10),
+                    uf, cidade, rua, complemento: complemento || null
+                };
+                enderecos.push(novo);
+                renderList(listaEnd, enderecos, e=>`ID ${e.id_endereco}: ${e.rua} — ${e.cidade}/${e.uf} (CEP ${e.cep})`);
+                refreshSelects();
+                output.textContent = 'Endereço salvo (local):\n' + JSON.stringify(novo, null, 2);
+                this.reset();
+            });
+
+            // Acompanhante form
+            el('form-acompanhante').addEventListener('submit', function(e){
+                e.preventDefault();
+                const nome = el('acomp-nome').value.trim();
+                const idade = parseInt(el('acomp-idade').value,10);
+                const cpf = el('cpf-acompanhante').value.trim();
+                const telefone = el('tel-acompanhante').value.trim() || null;
+                if (!/^\d{11}$/.test(cpf)) { alert('CPF do acompanhante deve ter 11 números'); return; }
+
+                const novo = {
+                    id_acompanhante: nextAcompanhanteId++,
+                    nome, idade, cpf_acompanhante: cpf, telefone_acompanhante: telefone
+                };
+                acompanhantes.push(novo);
+                renderList(listaAcomp, acompanhantes, a=>`ID ${a.id_acompanhante}: ${a.nome} — ${a.idade} anos (CPF ${a.cpf_acompanhante})`);
+                refreshSelects();
+                output.textContent = 'Acompanhante salvo (local):\n' + JSON.stringify(novo, null, 2);
+                this.reset();
+            });
+
+            // Paciente form
+            el('form-paciente').addEventListener('submit', function(e){
+                e.preventDefault();
+                const nome = el('paciente-nome').value.trim();
+                const idade = parseInt(el('paciente-idade').value,10);
+                const cpf = el('paciente-cpf').value.trim();
+                const telefone = el('paciente-telefone').value.trim() || null;
+                const email = el('paciente-email').value.trim();
+                const senha = el('paciente-senha').value;
+                const id_endereco = selEndereco.value ? parseInt(selEndereco.value,10) : null;
+                const id_acompanhante = selAcomp.value ? parseInt(selAcomp.value,10) : null;
+
+                if (!/^\d{11}$/.test(cpf)) { alert('CPF do paciente deve ter 11 números'); return; }
+                if (!email) { alert('Email é obrigatório'); return; }
+
+                const novo = {
+                    id_paciente: nextPacienteId++,
+                    nome, idade, cpf, telefone, email, senha,
+                    id_endereco, id_acompanhante
+                };
+                pacientes.push(novo);
+                renderList(listaPac, pacientes, p=>`ID ${p.id_paciente}: ${p.nome} — CPF ${p.cpf} — endereço:${p.id_endereco || 'N/A'} acompanhante:${p.id_acompanhante || 'N/A'}`);
+                output.textContent = 'Paciente cadastrado (local):\n' + JSON.stringify(novo, null, 2);
+                this.reset();
+            });
+
+            // initial render
+            renderList(listaEnd, enderecos, e=>`ID ${e.id_endereco}: ${e.rua}`);
+            renderList(listaAcomp, acompanhantes, a=>`ID ${a.id_acompanhante}: ${a.nome}`);
+            renderList(listaPac, pacientes, p=>`ID ${p.id_paciente}: ${p.nome}`);
+            refreshSelects();
+
+        })();
+    </script>
+</body>
+</html>

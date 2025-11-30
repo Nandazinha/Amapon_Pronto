@@ -343,3 +343,7 @@ footer > div { margin-bottom: 12px; }
   .gallery-photos { grid-template-columns: 1fr; }
   main, .container { padding: 10px 2vw; }
 }
+a{
+  color: #fff;
+  text-decoration: none;
+}

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AMAPON - Humanizando e Transformando Vidas</title>
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-     <header>
+  <header>
     <div class="header-inner">
       <div class="logo">
         <img src="imgs/logo amapon.jpeg" alt="AMAPON logo">
@@ -17,9 +19,9 @@
         </div>
       </div>
       <nav aria-label="menu principal">
-        <a href="index.html">Início</a>
-        <a href="cadastro.html">Vagas</a>
-        <a href="apoie.html">Apoie</a>
+        <a href="index.php">Início</a>
+        <a href="cadastro.php">Vagas</a>
+        <a href="apoie.php">Apoie</a>
       </nav>
     </div>
   </header>
@@ -41,11 +43,11 @@
       <h2>Sobre a AMAPON</h2>
       <div class="card-row" style="align-items:flex-start">
         <div style="flex:1; min-width:300px">
-            <div style="display:flex; gap:12px; flex-wrap:wrap">
+          <div style="display:flex; gap:12px; flex-wrap:wrap">
             <img src="imgs/amapon 10.jpg" alt="entrevista" style="width:48%; border-radius:8px; object-fit:cover; height:240px">
             <img src="imgs/amapon 5.jpeg" alt="grupo" style="width:48%; border-radius:8px; object-fit:cover; height:240px">
-            </div>
-            <br>
+          </div>
+          <br>
 
           <div class="lead" style="margin-top:12px; text-align:left;">
             <p><strong>A AMAPON</strong>, A Associação Marilense de Apoio ao Paciente Oncológico (AMAPOM) é uma instituição sem fins lucrativos fundada em 28 de julho de 2023, com o propósito de oferecer acolhimento e suporte integral a pacientes em tratamento contra o câncer e a seus familiares. Nossa missão é promover qualidade de vida, bem-estar e dignidade durante o processo de enfrentamento da doença, por meio de uma rede de cuidados humanizados e solidários. Entre os serviços prestados, destacam-se o apoio nutricional, com acompanhamento e orientações para uma alimentação equilibrada; pernoite, garantindo hospedagem segura e confortável para pacientes e acompanhantes; suporte psicológico, visando o fortalecimento emocional; além de atividades relaxantes e apoio médico especializado. A AMAPOM atua em benefício das cidades que integram o Departamento Regional de Saúde (DRS), ampliando o acesso aos cuidados e fortalecendo os vínculos entre pacientes, famílias e profissionais da área da saúde. Nosso trabalho é movido pela empatia, solidariedade e compromisso em oferecer esperança e amparo a quem mais precisa.</p>
@@ -82,9 +84,17 @@
         <div class="card"><img src="imgs/mulher-com-cancer-de-pele-passando-um-tempo-com-a-amiga-scaled-1-1080x675.jpg" alt="autoestima">
           <h3>Sala Autoestima</h3>
           <p style="text-align:center">
-            <a href="sala_autoestima.html">Conhecer</a></p></div>
-        <div class="card"><img src="imgs/mulheres todas juntas.jpg" alt="integração"><h3>Sala Integração</h3><p style="text-align:center"><a href="#">Conhecer</a></p></div>
-        <div class="card"><img src="imgs/lazer.webp" alt="lazer"><h3>Sala de Lazer</h3><p style="text-align:center"><a href="#">Conhecer</a></p></div>
+            <a href="sala_autoestima.html">Conhecer</a>
+          </p>
+        </div>
+        <div class="card"><img src="imgs/mulheres todas juntas.jpg" alt="integração">
+          <h3>Sala Integração</h3>
+          <p style="text-align:center"><a href="#">Conhecer</a></p>
+        </div>
+        <div class="card"><img src="imgs/lazer.webp" alt="lazer">
+          <h3>Sala de Lazer</h3>
+          <p style="text-align:center"><a href="#">Conhecer</a></p>
+        </div>
       </div>
     </section>
 
@@ -93,9 +103,21 @@
       <h2>Notícias e Divulgações</h2>
       <div class="two-col">
         <div>
-          <div class="news-item"><img src="imgs/amapon 4.jfif" alt="not1"><div><strong>Amigos do Bar": construção da casa de apoio entra na reta final</strong><div style="font-size:12px; color:#333; margin-top:6px">11/08/2025 - <a href="#">Ver mais...</a></div></div></div>
-          <div class="news-item"><img src="imgs/amapon 6.jfif" alt="not2"><div><strong>ONG AMAPON VAI AJUDAR PACIENTES COM CÂNCER</strong><div style="font-size:12px; margin-top:6px">04/12/2023 - <a href="#">Ver mais...</a></div></div></div>
-          <div class="news-item"><img src="imgs/amapon.jfif" alt="not3"><div><strong>Solenidade marca lançamento da pedra fundamental da Amapon</strong><div style="font-size:12px; margin-top:6px">25/11/2023 - <a href="#">Ver mais...</a></div></div></div>
+          <div class="news-item"><img src="imgs/download.jpeg" alt="not1">
+            <div><strong>Amigos do Bar": construção da casa de apoio entra na reta final</strong>
+              <div style="font-size:12px; color:#333; margin-top:6px">11/08/2025 </div>
+            </div>
+          </div>
+          <div class="news-item"><img src="imgs/amapon.jpeg" alt="not2">
+            <div><strong>ONG AMAPON VAI AJUDAR PACIENTES COM CÂNCER</strong>
+              <div style="font-size:12px; margin-top:6px">04/12/2023 </div>
+            </div>
+          </div>
+          <div class="news-item"><img src="imgs/amapon 5.jpeg" alt="not3">
+            <div><strong>Solenidade marca lançamento da pedra fundamental da Amapon</strong>
+              <div style="font-size:12px; margin-top:6px">25/11/2023 </div>
+            </div>
+          </div>
         </div>
         <aside style="background:#eee; border-radius:10px; min-height:260px; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; width:100%; max-width:340px; margin-left:auto; margin-right:auto;">
           <button id="prev" style="position:absolute; left:10px; background:rgba(255,255,255,0.8); border:none; border-radius:50%; width:32px; height:32px; font-size:20px; cursor:pointer; z-index:2;">&#8592;</button>
@@ -105,15 +127,28 @@
           <button id="next" style="position:absolute; right:10px; background:rgba(255,255,255,0.8); border:none; border-radius:50%; width:32px; height:32px; font-size:20px; cursor:pointer; z-index:2;">&#8594;</button>
         </aside>
         <script>
-          const images = [
-            { src: "imgs/amapon 4.jfif", alt: "not1" },
-            { src: "imgs/amapon 6.jfif", alt: "not2" },
-            { src: "imgs/amapon.jfif", alt: "not3" }
+          const images = [{
+              src: "imgs/campanha de doação.jpg",
+              alt: "not1"
+            },
+            {
+              src: "imgs/FEIJOADA SOLIDARIA.jpg",
+              alt: "not2"
+            },
+            {
+              src: "imgs/festival das estrelas.jpg",
+              alt: "not3"
+            }
+            ,{
+              src: "imgs/galinhada solidaria.jpg",
+              alt: "not4"
+            }
           ];
           let idx = 0;
           const carousel = document.getElementById('carousel');
+
           function showImage(i) {
-            carousel.innerHTML = `<img src="${images[i].src}" alt="${images[i].alt}" style="width:90%; max-width:260px; border-radius:8px; object-fit:cover; height:180px; display:block;">`;
+            carousel.innerHTML = `<img src="${images[i].src}" alt="${images[i].alt}" style="width:90%; max-width:260px; border-radius:8px; object-fit:cover; height:480px; display:block;">`;
           }
           document.getElementById('prev').onclick = () => {
             idx = (idx - 1 + images.length) % images.length;
@@ -134,26 +169,6 @@
       </div>
     </section>
 
-    <!-- APOIE -->
-    <section class="apoie" id="apoie">
-      <h2>APOIE E AJUDE</h2>
-      <p>Quer ajudar na qualidade de vida dessas pessoas? Seja solidário também!</p>
-      <div class="btns">
-        <button class="btn">Doar ou se voluntariar</button>
-        <button class="btn">PIX</button>
-        <button class="btn">Se tornar patrocinador</button>
-      </div>
-      <p style="font-style:italic; margin-top:12px">Doando de qualquer uma das formas acima você estará ajudando diversos setores da AMAPON!</p>
-    </section>
-
-    <!-- FUNDADORES -->
-    <section class="fundadores">
-      <h2>Conheça quem tornou este sonho realidade:</h2>
-      <div class="card-row">
-        <div class="card"><img src="imgs/amapon 1.jfif" alt="projeto"><h3>AMAPON: do papel ao projeto</h3><p style="text-align:center"><a href="#">Ver mais...</a></p></div>
-        <div class="card"><img src="imgs/amapon 4.jfif" alt="cofundadores"><h3>Cofundadores</h3><p style="text-align:center"><a href="#">Ver mais...</a></p></div>
-      </div>
-    </section>
 
     <!-- PATROCINADORES -->
     <section id="parceiros" class="patrocinadores">
@@ -165,13 +180,13 @@
             <img src="imgs/marilan.png" alt="Patrocinador 1" width="40%">
           </div>
           <div class="sponsor-logo">
-            <img src="imgs/rondonaves.png" alt="Patrocinador 2" width= "40%">
+            <img src="imgs/rondonaves.png" alt="Patrocinador 2" width="40%">
           </div>
           <div class="sponsor-logo">
-            <img src="imgs/cfg.png" alt="Patrocinador 3" width= "40%">
+            <img src="imgs/cfg.png" alt="Patrocinador 3" width="40%">
           </div>
           <div class="sponsor-logo">
-            <img src="imgs/salione.png" alt="Patrocinador 4" width= "40%">
+            <img src="imgs/salione.png" alt="Patrocinador 4" width="40%">
           </div>
         </div>
       </div>
@@ -193,9 +208,9 @@
     <div class="container foot-inner">
       <div>
         <strong>Grupo Pervinca - DEVMentors Unimar</strong><br>
-             <br>
-            Avenida Hygino Muzzi Filho, 1001 · Bloco 5 · Mirante · Marília · SP <br>
-            www.devmenthors.com.br<br>
+        <br>
+        Avenida Hygino Muzzi Filho, 1001 · Bloco 5 · Mirante · Marília · SP <br>
+        www.devmenthors.com.br<br>
         <a href="https://www.instagram.com/devmenthors?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@devmenthors</a>
       </div>
       <div style="text-align:right">
@@ -205,4 +220,5 @@
     </div>
   </footer>
 </body>
+
 </html>

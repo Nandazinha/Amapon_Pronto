@@ -38,12 +38,12 @@ header {
 }
 
 .header-inner {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 .logo {
@@ -75,6 +75,7 @@ nav a {
 nav a:hover {
   background: var(--muted);
 }
+
 
 /* LAYOUT PRINCIPAL */
 main {

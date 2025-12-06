@@ -265,8 +265,8 @@ h2 {
 }
 
 footer {
-  background: linear-gradient(180deg, var(--accent), var(--muted));
-  color: #fff;
+  background-color: #ccccff;
+  color: #000000;
   padding: 26px;
   margin-top: 28px;
   border-radius: var(--radius) var(--radius) 0 0;

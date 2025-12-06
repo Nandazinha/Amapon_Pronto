@@ -253,22 +253,15 @@ button:active {
 }
 
 /* RODAPÉ (usa o mesmo estilo base) */
+
 footer {
-  background: linear-gradient(180deg, var(--accent), var(--muted));
-  color: #fff;
-  padding: 26px 20px;
+  background-color: #ccccff;
+  color: #000000;
+  padding: 26px;
   margin-top: 28px;
   border-radius: var(--radius) var(--radius) 0 0;
 }
 
-footer .foot-inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  flex-wrap: wrap;
-}
 
 /* RESPONSIVO */
 @media (max-width: 900px) {
@@ -309,5 +302,8 @@ footer .foot-inner {
 
   .foot-inner {
     grid-template-columns: 1fr;
+    background-color: #ccccff;
+    color: #000000;
+    padding: 26px;
   }
 }

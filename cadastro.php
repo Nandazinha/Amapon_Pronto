@@ -459,14 +459,15 @@ $pacientes = fetch_all(
     </main>
 
     <footer>
+
         <div class="container foot-inner">
             <div>
-                <strong>Grupo Pervinca - DEVMentors Unimar</strong><br><br>
+                <strong>Grupo Pervinca - DEVMentors Unimar</strong><br>
+                <br>
                 Avenida Hygino Muzzi Filho, 1001 · Bloco 5 · Mirante · Marília · SP <br>
                 www.devmenthors.com.br<br>
-                <a href="https://www.instagram.com/devmenthors">@devmenthors</a>
+                <a href="https://www.instagram.com/devmenthors?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">@devmenthors</a>
             </div>
-
             <div style="text-align:right">
                 <strong>AMAPON ©</strong><br>
                 (14) 98114-0055

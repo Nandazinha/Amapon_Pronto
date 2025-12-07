@@ -205,6 +205,7 @@ $pacientes = fetch_all(
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style_cadastro.css">
+    <link rel="icon" type="image/png" href="imgs/logo amapon.jpeg">
     <title>Cadastro - Amapon</title>
 </head>
 

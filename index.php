@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AMAPON - Humanizando e Transformando Vidas</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="imgs/logo amapon.jpeg">
+
 </head>
 
 <body>
@@ -57,52 +59,75 @@
     </section>
 
     <!-- PROJETOS -->
-    <section class="projetos">
-      <h2>Conheça nossos projetos</h2>
-      <div class="card-row">
-        <article class="card">
-          <img src="imgs/cuidados-paliativos.jpg" alt="Espaço do paciente">
-          <h3 style="font-family:inherit">Espaço do paciente</h3>
-          <p style="text-align:center"><a href="#">Conhecer</a></p>
-        </article>
-        <article class="card">
-          <img src="imgs/criança com cancer e sua mãe.jpg" alt="Espaço da família">
-          <h3 style="font-family:inherit">Espaço da família</h3>
-          <p style="text-align:center"><a href="#">Conhecer</a></p>
-        </article>
-        <article class="card">
-          <img src="imgs/paciente e cuidadora.jpg" alt="Qualidade de vida">
-          <h3 style="font-family:inherit">Qualidade de Vida</h3>
-          <p style="text-align:center"><a href="#">Conhecer</a></p>
-        </article>
-      </div>
-    </section>
+    <div class="divider">
+      <section class="projetos">
+        <h2>Conheça nossos projetos</h2>
+        <div class="card-row">
+          <article class="card">
+            <img src="imgs/cuidados-paliativos.jpg" alt="Espaço do paciente">
+            <h3 style="font-family:inherit">Espaço do paciente</h3>
+            <center>
+              <button class="btt">
+                <p style="text-align:center"><a href="#">Conhecer</a></p>
+              </button>
+            </center>
+          </article>
+          <article class="card">
+            <img src="imgs/criança com cancer e sua mãe.jpg" alt="Espaço da família">
+            <h3 style="font-family:inherit">Espaço da família</h3>
+            <center>
+              <button class="btt">
+                <p style="text-align:center"><a href="#">Conhecer</a></p>
+              </button>
+            </center>
+          </article>
+          <article class="card">
+            <img src="imgs/paciente e cuidadora.jpg" alt="Qualidade de vida">
+            <h3 style="font-family:inherit">Qualidade de Vida</h3>
+            <center>
+              <button class="btt">
+                <p style="text-align:center"><a href="#">Conhecer</a></p>
+              </button>
+            </center>
+          </article>
+        </div>
+      </section>
 
-    <!-- SALAS -->
-    <section class="salas">
-      <div class="card-row">
-        <div class="card"><img src="imgs/mulher-com-cancer-de-pele-passando-um-tempo-com-a-amiga-scaled-1-1080x675.jpg" alt="autoestima">
-          <h3>Sala Autoestima</h3>
-          <p style="text-align:center">
-            <a href="sala_autoestima.html">Conhecer</a>
-          </p>
+      <!-- SALAS -->
+      <section class="salas">
+        <div class="card-row">
+          <div class="card"><img src="imgs/mulher-com-cancer-de-pele-passando-um-tempo-com-a-amiga-scaled-1-1080x675.jpg" alt="autoestima">
+            <h3>Sala Autoestima</h3>
+            <center>
+              <button class="btt">
+                <p style="text-align:center"><a href="#">Conhecer</a></p>
+              </button>
+            </center>
+          </div>
+          <div class="card"><img src="imgs/mulheres todas juntas.jpg" alt="integração">
+            <h3>Sala Integração</h3>
+            <center>
+              <button class="btt">
+                <p style="text-align:center"><a href="#">Conhecer</a></p>
+              </button>
+            </center>
+          </div>
+          <div class="card"><img src="imgs/lazer.webp" alt="lazer">
+            <h3>Sala de Lazer</h3>
+            <center>
+              <button class="btt">
+                <p style="text-align:center"><a href="#">Conhecer</a></p>
+              </button>
+            </center>
+          </div>
         </div>
-        <div class="card"><img src="imgs/mulheres todas juntas.jpg" alt="integração">
-          <h3>Sala Integração</h3>
-          <p style="text-align:center"><a href="#">Conhecer</a></p>
-        </div>
-        <div class="card"><img src="imgs/lazer.webp" alt="lazer">
-          <h3>Sala de Lazer</h3>
-          <p style="text-align:center"><a href="#">Conhecer</a></p>
-        </div>
-      </div>
-    </section>
-
+      </section>
+    </div>
     <!-- NOTÍCIAS E EVENTOS -->
     <section class="noticias">
       <h2>Notícias e Divulgações</h2>
       <div class="two-col">
-        <div>
+        <div class="news-list">
           <div class="news-item"><img src="imgs/download.jpeg" alt="not1">
             <div><strong>Amigos do Bar": construção da casa de apoio entra na reta final</strong>
               <div style="font-size:12px; color:#333; margin-top:6px">11/08/2025 </div>
@@ -138,8 +163,7 @@
             {
               src: "imgs/festival das estrelas.jpg",
               alt: "not3"
-            }
-            ,{
+            }, {
               src: "imgs/galinhada solidaria.jpg",
               alt: "not4"
             }
